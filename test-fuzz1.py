@@ -23,3 +23,9 @@ coincidencias = process.extract(nombre_ingresado, nombres_resgistrados, limit=3)
 for nombre, puntaje in coincidencias:
     print(f"Coincidencias: {nombre}-- Similitud: {puntaje}%")
 
+
+from thefuzz import fuzz
+fuzz.ratio("Hola mundo", "Hola mundo")
+
+#Comparar palabras con errores ortográficos
+fuzz.ratio("Manzana", "Mnzana")

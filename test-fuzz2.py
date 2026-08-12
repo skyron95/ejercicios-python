@@ -4,7 +4,8 @@
 #100 = completamente iguales y 0 = totalmente diferentes.
 
 from thefuzz import fuzz
-fuzz.ratio("Hola mundo", "Hola mundo")
+print (fuzz.ratio("Hola mundo", "Hola mundo"))
+
 
 #Comparar palabras con errores ortográficos
-fuzz.ratio("Manzana", "Mnzana")
+print (fuzz.ratio("Manzana", "Mnzana"))
